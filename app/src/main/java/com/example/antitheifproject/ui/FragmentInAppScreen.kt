@@ -99,7 +99,7 @@ class FragmentInAppScreen :
                         // productDetail (3 months)
                     } else if (productDetail.productId == "gold_product" && productDetail.planId == "gold-plan-yearly") {
                         // productDetail (yearly)
-                        _binding?.yearlyText?.text = "${productDetail.currencyCode} 0.0"
+                        _binding?.yearlyText?.text = "${productDetail.price}"
                         var originalString = getString(R.string.annual_free_trail_second)
                         originalString =originalString.replace("12.0", productDetail.price)
                         _binding?.yearlyTextTDetail?.text = originalString

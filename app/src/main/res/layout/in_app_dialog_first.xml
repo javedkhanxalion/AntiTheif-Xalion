@@ -137,19 +137,6 @@
             app:layout_constraintStart_toStartOf="@id/yearlyTextT"
             app:layout_constraintTop_toBottomOf="@id/yearlyTextT" />
 
-        <TextView
-            android:id="@+id/yearlyTextBefore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/yearlyTextT"
-            app:layout_constraintTop_toTopOf="@+id/yearlyTextT"
-            android:paddingEnd="@dimen/_6sdp"
-            android:textSize="@dimen/_8sdp"
-            android:text="@string/today_s_total"
-            app:layout_constraintEnd_toStartOf="@id/yearlyText"
-            app:layout_constraintBottom_toBottomOf="@id/yearlyTextT"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:textColor="#FF005C"/>
 
         <TextView
             android:id="@+id/yearlyText"
@@ -157,7 +144,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toRightOf="@id/yearlyTextT"
             app:layout_constraintTop_toTopOf="@+id/yearlyTextT"
-            android:paddingEnd="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/yearlyTextT"
             android:layout_marginStart="@dimen/_10sdp"
