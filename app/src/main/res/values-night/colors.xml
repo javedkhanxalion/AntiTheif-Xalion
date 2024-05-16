@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">@color/black</color>
+    <color name="purple_500">@color/black</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="splashBgColor">@color/black</color>
+    <color name="menuBgColor">@color/black</color>
+    <color name="itemMenuColor">#191A1B</color>
+    <color name="textColor">@color/white</color>
+    <color name="nveTextColor">@color/white</color>
+    <color name="settingBtnColor">#FFA800</color>
+    <color name="imageBtnColor">#323232</color>
+    <color name="navByBtn">#544E4E</color>
+    <color name="button_color_1">@color/white</color>
+    <color name="button_color_2">@color/white</color>
+
+</resources>

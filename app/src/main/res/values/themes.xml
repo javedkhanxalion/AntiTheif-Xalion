@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AntiTheifProject" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/textColor</item>
+        <item name="colorOnPrimary">@color/textColor</item>
+        <!-- Secondary brand color. -->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/splashBgColor</item>
+        <item name="android:windowBackground">@drawable/pre_splash_layer_list
+        </item>
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="ShoppingList.BottomSheetDialog" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="backgroundTint">@color/splashBgColor</item>
+        <item name="android:elevation">@dimen/_5sdp</item>
+        <item name="elevation">5dp</item>
+    </style>
+
+</resources>

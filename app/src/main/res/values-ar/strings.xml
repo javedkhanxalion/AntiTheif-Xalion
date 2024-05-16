@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">مضاد للدرون</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">تكوين المنبه لحماية هاتفك من الروبوتات أو العثور على هاتفك</string>
+    <string name="phone_anti_theft">مكافحة روب الهاتف</string>
+    <string name="continue_txt">استمرار</string>
+    <string name="intruder">إدخال</string>
+    <string name="pocket">البولسيلو</string>
+    <string name="password">كلمة المرور</string>
+    <string name="motion">الحركة</string>
+    <string name="wistle">سيلباتو</string>
+    <string name="handfree">إطلاق اليد</string>
+    <string name="clap">أبلاودير</string>
+    <string name="remove">الحذف</string>
+    <string name="battery">البطارية</string>
+    <string name="wifi_alarm">إنذار واي فاي</string>
+
+    <string name="detection">الاكتشاف</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="exit">سالير</string>
+    <string name="exit_from_app">¿هل ترغب في النجاة؟</string>
+    <string name="enjo_app">استمتع بتطبيقنا</string>
+    <string name="rating_detail">إذا كنت تستمتع بالتطبيق، كاليفورنيا</string>
+    <string name="rate_us">كاليفيكانو</string>
+    <string name="notification">الإخطار</string>
+    <string name="share_app">مشاركة التطبيق</string>
+    <string name="premium">بريميوم</string>
+    <string name="language">اللغة اللغوية</string>
+    <string name="more_app">تطبيق آخر (إعلان)</string>
+    <string name="privacy">الخصوصية</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">اضغط على زر التنشيط وقم بإغلاق الهاتف مباشرة</string>
+    <string name="select_sound">اختيار الصوت</string>
+    <string name="inturder_selfie">متسلل الصورة الذاتية</string>
+    <string name="wrong_password_alarm">إنذار كلمة المرور غير صحيح</string>
+    <string name="indurder_alert">تنبيه للمعلومات</string>
+    <string name="pin_attempt_setting">تكوين هدف الإنشاء</string>
+    <string name="stop_alarm">إنذار مانع</string>
+    <string name="show_indruder">إظهار الدخيل</string>
+    <string name="pocket_detection">كشف الحقيبة</string>
+    <string name="set_app_language">المصطلحات الاختيارية</string>
+
+    <string name="next">التالي</string>
+    <string name="skip">تخطي</string>
+    <string name="_12_36_am">| 12 : 36 صباحًا</string>
+    <string name="today">إلى اليوم</string>
+    <string name="todo">المهام</string>
+    <string name="intruder_images">صور الدخيل</string>
+    <string name="loading_advertisement">جارٍ تحميل الإعلانات</string>
+    <string name="share">مشاركة</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">إلغاء</string>
+    <string name="do_you_want_to_delete_images">هل تريد حذف الصور؟</string>
+    <string name="service_disable_dialog">هل تريد تعطيل الخدمة؟</string>
+    <string name="image_deleted">تم حذف الصورة!</string>
+    <string name="wongPasswordAlertIsActive">تنبيه كلمة المرور الخاطئة نشط</string>
+    <string name="ok">حسنًا</string>
+    <string name="permissionDENIED">تم رفض الإذن</string>
+    <string name="permission_needed">الإذن مطلوب</string>
+    <string name="camera_permission">يلزم الحصول على إذن الكاميرا للصور</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">لم يتم العثور على صورة</string>
+    <string name="flash">فلاش</string>
+    <string name="vibration">الاهتزاز</string>
+    <string name="active">نشط</string>
+    <string name="de_active">قطع الاتصال</string>
+    <string name="service">الخدمة</string>
+
+    <string name="english">الإنجليزية</string>
+    <string name="spanish">الإسبانية</string>
+    <string name="hindi">الهندية</string>
+    <string name="arabic">العربية</string>
+    <string name="french">الفرنسية</string>
+    <string name="german">الألمانية</string>
+    <string name="japanese">اليابانية</string>
+    <string name="dutch">الهولندية</string>
+
+    <string name="tone_1">صافرة إنذار، إنذار، تحذير</string>
+    <string name="tone_2">طبقة صوت شخصية عالية</string>
+    <string name="tone_3">إنذار الطوارئ</string>
+    <string name="tone_4">تحذير من الخطر</string>
+    <string name="tone_5">حالة طوارئ صغيرة</string>
+    <string name="tone_6">نغمة تنبيه معقدة</string>
+    <string name="tone_7">نغمة بسيطة عالية الطبقة</string>
+
+    <string name="no_internet">لا يوجد إنترنت</string>
+    <string name="check_ads">التحقق من الإعلانات</string>
+    <string name="enable_disable">تمكين/تعطيل</string>
+    <string name="detail">التفاصيل</string>
+    <string name="select">حدد</string>
+
+    <string name="rate_title" >قيم تطبيقنا!</string>
+    <string name="exit_title" >هل أنت متأكد من رغبتك في الخروج؟</string>
+    <string name="notification_permission" >يلزم الحصول على إذن الإعلام للوصول إلى جميع الميزات</string>
+
+    <string name="title_intruder" >قم بتشغيل المفتاح لتنشيط ميزة اكتشاف الدخيل على هاتفك.</string>
+    <string name="title_pocket" >قم بتشغيل المفتاح لتنشيط ميزة اكتشاف الجيب على هاتفك.</string>
+    <string name="title_password" >قم بتشغيل مفتاح تنشيط ميزة الكشف عن كلمة المرور على هاتفك.</string>
+    <string name="title_motion" >قم بتشغيل مفتاح تفعيل ميزة اكتشاف الحركة على هاتفك.</string>
+    <string name="title_whistle" >قم بتشغيل المفتاح لتنشيط ميزة الكشف عن الصافرة على هاتفك.</string>
+    <string name="title_handfree" >قم بتشغيل المفتاح لتنشيط ميزة الكشف عن HandFree على هاتفك.</string>
+    <string name="title_clap" >قم بتشغيل المفتاح الخاص بتنشيط ميزة اكتشاف التصفيق على هاتفك.</string>
+    <string name="title_remove_charger" >قم بتشغيل المفتاح لتنشيط ميزة الكشف عن إزالة الشاحن على هاتفك.</string>
+    <string name="title_battery" >قم بتشغيل المفتاح لتنشيط ميزة اكتشاف البطارية بنسبة 100% على هاتفك.</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">وصول غير محدود</string>
+    <string name="monthly_subscription">الاشتراك الشهري</string>
+    <string name="yearly_subscription">الاشتراك السنوي</string>
+    <string name="annual_free_trail">سنوي (الطريق المجاني)</string>
+    <string name="no_commitment_cancel_anytime">لا يوجد التزام بالإلغاء في أي وقت</string>
+    <string name="_12_99_yearly">12.99 دولارًا أمريكيًا / سنويًا</string>
+    <string name="_1_99_monthly">1.99 دولارًا أمريكيًا / شهريًا</string>
+    <string name="annual_free_trail_second">بعد تجربة مجانية مدتها 3 أيام.اشتراك سنوي بقيمة 12.0 دولارًا بعد انتهاء النسخة التجريبية المجانية.</string>
+
+</resources>

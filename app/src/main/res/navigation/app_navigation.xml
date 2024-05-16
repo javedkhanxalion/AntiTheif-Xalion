@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/mySplashFragment">
+    <fragment
+        android:id="@+id/mySplashFragment"
+        android:name="com.example.antitheifproject.ui.SplashFragment"
+        android:label="mySplashFragment"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/myLoadingFragment"
+        android:name="com.example.antitheifproject.ui.LoadingScreenFragment"
+        android:label="myLoadingFragment"
+        tools:layout="@layout/fragment_loading" />
+    <fragment
+        android:id="@+id/myMainMenuFragment"
+        android:name="com.example.antitheifproject.ui.MainMenuFragment"
+        android:label="myMainMenuFragment"
+        tools:layout="@layout/fragment_main_menu" />
+    <fragment
+        android:id="@+id/FragmentDetectionSameFunction"
+        android:name="com.example.antitheifproject.ui.FragmentDetectionSameFunction"
+        android:label="FragmentDetectionSameFunction"
+        tools:layout="@layout/fragment_detail_module" />
+    <fragment
+        android:id="@+id/FragmentPasswordDetail"
+        android:name="com.example.antitheifproject.ui.FragmentPasswordDetail"
+        android:label="FragmentPasswordDetail"
+        tools:layout="@layout/fragment_detail_module" />
+    <fragment
+        android:id="@+id/FragmentInturderDetectionDetail"
+        android:name="com.example.antitheifproject.ui.FragmentInturderDetectionDetail"
+        android:label="FragmentInturderDetectionDetail"
+        tools:layout="@layout/fragment_detail_module" />
+    <fragment
+        android:id="@+id/LanguageFragment"
+        android:name="com.example.antitheifproject.ui.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/FragmentSoundSelection"
+        android:name="com.example.antitheifproject.ui.FragmentSoundSelection"
+        android:label="FragmentSoundSelection"
+        tools:layout="@layout/fragment_sound_selection" />
+    <fragment
+        android:id="@+id/IntoScreenFragment"
+        android:name="com.example.antitheifproject.ui.IntoScreenFragment"
+        android:label="IntoScreenFragment"
+        tools:layout="@layout/fragment_main_intro" />
+    <fragment
+        android:id="@+id/FragmentShowIntruder"
+        android:name="com.example.antitheifproject.ui.showIntruderScreen.FragmentShowIntruder"
+        android:label="FragmentShowIntruder"
+        tools:layout="@layout/show_intruder_fragment" />
+    <fragment
+        android:id="@+id/ShowFullImageFragment"
+        android:name="com.example.antitheifproject.ui.showIntruderScreen.ShowFullImageFragment"
+        android:label="ShowFullImageFragment"
+        tools:layout="@layout/fragment_show_full_image_screen" />
+    <fragment
+        android:id="@+id/FragmentExitScreen"
+        android:name="com.example.antitheifproject.ui.FragmentExitScreen"
+        android:label="FragmentExitScreen"
+        tools:layout="@layout/fragment_exit_screen" />
+    <fragment
+        android:id="@+id/FragmentInAppScreen"
+        android:name="com.example.antitheifproject.ui.FragmentInAppScreen"
+        android:label="FragmentInAppScreen"
+        tools:layout="@layout/in_app_dialog_first" />
+
+</navigation>

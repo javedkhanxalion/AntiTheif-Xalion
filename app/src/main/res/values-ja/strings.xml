@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">アンチシーフ</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">アラームを設定して、携帯電話を盗難から守るか、携帯電話を見つけます</string>
+    <string name="phone_anti_theft">電話盗難対策</string>
+    <string name="continue_txt">続行</string>
+    <string name="intruder">侵入者</string>
+    <string name="pocket">ポケット</string>
+    <string name="password">パスワード</string>
+    <string name="motion">モーション</string>
+    <string name="wistle">ホイッスル</string>
+    <string name="handfree">ハンズフリー</string>
+    <string name="clap">拍手</string>
+    <string name="remove">削除</string>
+    <string name="battery">バッテリー</string>
+    <string name="wifi_alarm">Wi-Fi アラーム</string>
+
+
+    <string name="detection">検出</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="exit">終了</string>
+    <string name="exit_from_app">終了しますか?</string>
+    <string name="enjo_app">アプリをお楽しみください</string>
+    <string name="rating_detail">アプリを楽しんでいただけた場合は、評価してください</string>
+    <string name="rate_us">評価してください</string>
+    <string name="notification">通知</string>
+    <string name="share_app">アプリを共有</string>
+    <string name="premium">プレミアム</string>
+    <string name="language">言語</string>
+    <string name="more_app">その他のアプリ (広告)</string>
+    <string name="privacy">プライバシー</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">アクティブ化ボタンを押して電話を直接置きます</string>
+    <string name="select_sound">​​サウンドを選択</string>
+    <string name="inturder_selfie">イントゥルダーの自撮り</string>
+    <string name="wrong_password_alarm">間違ったパスワード アラーム</string>
+    <string name="indurder_alert">インダーダーアラート</string>
+    <string name="pin_attempt_setting">PIN 試行設定</string>
+    <string name="stop_alarm">アラームを停止</string>
+    <string name="show_indruder">侵入者を表示</string>
+    <string name="pocket_detection">ポケット検出</string>
+    <string name="set_app_language">言語を選択</string>
+
+
+    <string name="next">次へ</string>
+    <string name="skip">スキップ</string>
+    <string name="_12_36_am">| 12 : 36 AM</string>
+    <string name="today">今日まで</string>
+    <string name="todo">やるべきこと</string>
+    <string name="intruder_images">侵入者の画像</string>
+    <string name="loading_advertisement">広告を読み込み中</string>
+    <string name="share">共有</string>
+    <string name="delete">削除</string>
+    <string name="cancel">キャンセル</string>
+    <string name="do_you_want_to_delete_images">画像を削除しますか?</string>
+    <string name="service_disable_dialog">サービスを無効にしますか?</string>
+    <string name="image_deleted">画像が削除されました!</string>
+    <string name="wongPasswordAlertIsActive">間違ったパスワードのアラートがアクティブです</string>
+    <string name="ok">わかりました</string>
+    <string name="permissionDENIED">許可が拒否されました</string>
+    <string name="permission_needed">許可が必要です</string>
+    <string name="camera_permission">写真にはカメラの許可が必要です</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">​​画像が見つかりません</string>
+    <string name="flash">フラッシュ</string>
+    <string name="vibration">振動</string>
+    <string name="active">アクティブ</string>
+    <string name="de_active">切断</string>
+    <string name="service">サービス</string>
+
+    <string name="english">英語</string>
+    <string name="spanish">スペイン語</string>
+    <string name="hindi">ヒンディー語</string>
+    <string name="arabic">アラビア語</string>
+    <string name="french">フランス語</string>
+    <string name="german">ドイツ語</string>
+    <string name="japanese">日本語</string>
+    <string name="dutch">オランダ語</string>
+
+    <string name="tone_1">サイレン、アラーム、警告</string>
+    <string name="tone_2">個人的な高音</string>
+    <string name="tone_3">緊急警報</string>
+    <string name="tone_4">危険を警告</string>
+    <string name="tone_5">小規模な緊急</string>
+    <string name="tone_6">複雑なビープ音</string>
+    <string name="tone_7">シンプルな高音</string>
+
+    <string name="no_internet">インターネットなし</string>
+    <string name="check_ads">広告をチェック</string>
+    <string name="enable_disable">有効/無効</string>
+    <string name="detail">詳細</string>
+    <string name="select">選択</string>
+
+    <string name="rate_title">アプリを評価してください!</string>
+    <string name="exit_title">終了してもよろしいですか?</string>
+    <string name="notification_permission" >すべての機能にアクセスするには通知権限が必要です</string>
+
+    <string name="title_intruder" >携帯電話の侵入者検知機能を有効にするスイッチをオンにします。</string>
+    <string name="title_pocket">携帯電話のポケット検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_password">携帯電話のパスワード検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_motion" >携帯電話の動体検知機能を有効にするスイッチをオンにします。</string>
+    <string name="title_whistle">携帯電話のホイッスル検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_handfree">電話機のハンドフリー検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_clap" >携帯電話の拍手検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_remove_charger" >携帯電話の充電器取り外し検出機能を有効にするスイッチをオンにします。</string>
+    <string name="title_battery" >携帯電話のバッテリー 100% 検出機能を有効にするスイッチをオンにします。</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">無制限のアクセス</string>
+    <string name="monthly_subscription">月次サブスクリプション</string>
+    <string name="yearly_subscription">年間サブスクリプション</string>
+    <string name="annual_free_trail">年次 (無料トレイル)</string>
+    <string name="no_commitment_cancel_anytime">コミットメントなしでいつでもキャンセル</string>
+    <string name="_12_99_yearly">$12.99 / 年間</string>
+    <string name="_1_99_monthly">月額 1.99 ドル</string>
+    <string name="annual_free_trail_second">3 日間の無料トライアル後。無料トライアル終了後は 12.0 ドルの年間サブスクリプション。</string>
+
+</resources>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topLinear">
+
+
+    <View
+        android:id="@+id/detection_icon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rect_menu_bg_linear_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/top_image"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Switch
+        android:id="@+id/inturderAlertSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@null"
+        android:button="@drawable/checkbox_intruder"
+        android:gravity="center"
+        android:thumb="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/top_image"
+        app:layout_constraintEnd_toEndOf="@id/detection_icon"
+        app:layout_constraintTop_toTopOf="@id/detection_icon"
+        app:track="@null"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/top_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/detection_icon"
+        app:layout_constraintEnd_toStartOf="@id/detection_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/detection_icon"
+        app:srcCompat="@drawable/intuder_alert" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="@string/indurder_alert"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/detection_icon"
+        app:layout_constraintEnd_toStartOf="@+id/inturderAlertSwitch"
+        app:layout_constraintStart_toStartOf="@id/detection_icon"
+        app:layout_constraintTop_toTopOf="@id/detection_icon" />
+
+    <TextView
+        android:id="@+id/title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/detection"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="@id/title_text"
+        app:layout_constraintStart_toStartOf="@id/title_text"
+        app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+
+    <View
+        android:id="@+id/intruderImagesView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_menu_bg_linear_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pin_attempt_image"
+        app:layout_constraintTop_toBottomOf="@id/detection_icon" />
+
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/pin_attempt_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/intruderImagesView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/intruderImagesView"
+        app:srcCompat="@drawable/pin_attempt_setting" />
+
+    <TextView
+        android:id="@+id/sound_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="@string/show_indruder"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/intruderImagesView"
+        app:layout_constraintEnd_toEndOf="@id/intruderImagesView"
+        app:layout_constraintStart_toStartOf="@id/intruderImagesView"
+        app:layout_constraintTop_toTopOf="@id/intruderImagesView" />
+
+    <TextView
+        android:id="@+id/sound_title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/detail"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="@id/sound_title_text"
+        app:layout_constraintStart_toStartOf="@id/sound_title_text"
+        app:layout_constraintTop_toBottomOf="@id/sound_title_text" />
+
+    <FrameLayout
+        android:id="@+id/nativeExitAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/round_btn_ads"
+        app:layout_constraintTop_toBottomOf="@id/intruderImagesView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.2"
+        android:text="@string/ad"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/nativeExitAd"
+        app:layout_constraintEnd_toEndOf="@+id/nativeExitAd"
+        app:layout_constraintStart_toStartOf="@+id/nativeExitAd"
+        app:layout_constraintTop_toTopOf="@+id/nativeExitAd" />
+
+    <View
+        android:id="@+id/stop_alarm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_menu_bg_linear_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop_alarm_image"
+        app:layout_constraintTop_toBottomOf="@+id/nativeExitAd" />
+
+    <Switch
+        android:id="@+id/stopAlertSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@null"
+        android:button="@drawable/checkbox_stop_alarm"
+        android:gravity="center"
+        android:thumb="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/stop_alarm_image"
+        app:layout_constraintEnd_toEndOf="@id/stop_alarm"
+        app:layout_constraintTop_toTopOf="@id/stop_alarm"
+        app:track="@null"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/stop_alarm_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/stop_alarm"
+        app:srcCompat="@drawable/stop_alarm" />
+
+    <TextView
+        android:id="@+id/stop_alam_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="@string/stop_alarm"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/stop_alarm"
+        app:layout_constraintEnd_toStartOf="@+id/stopAlertSwitch"
+        app:layout_constraintStart_toStartOf="@id/stop_alarm"
+        app:layout_constraintTop_toTopOf="@id/stop_alarm" />
+
+    <TextView
+        android:id="@+id/title_stop_alarm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/enable_disable"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="@id/stop_alam_title_text"
+        app:layout_constraintStart_toStartOf="@id/stop_alam_title_text"
+        app:layout_constraintTop_toBottomOf="@id/stop_alam_title_text" />
+
+
+    <View
+        android:id="@+id/wrong_icon"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_menu_bg_linear_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/wrong_pin_attempt_image"
+        app:layout_constraintTop_toBottomOf="@id/stop_alarm" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/wrong_pin_attempt_image"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/wrong_icon"
+        app:srcCompat="@drawable/wrong_pin_attempt" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/wrong_pin_attempt_image"
+        app:layout_constraintEnd_toEndOf="@+id/wrong_icon"
+        app:layout_constraintStart_toEndOf="@+id/wrong_pin_title_text"
+        app:layout_constraintTop_toTopOf="@id/wrong_icon">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/at_1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/menuBgColor">
+
+            <TextView
+                android:id="@+id/at_1_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/_1"
+                android:textColor="@color/textColor" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/at_2"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/menuBgColor">
+
+            <TextView
+                android:id="@+id/at_2_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@color/textColor" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/at_3"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:elevation="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/menuBgColor">
+
+            <TextView
+                android:id="@+id/at_3_txt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@color/textColor" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wrong_pin_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:singleLine="true"
+        android:text="@string/pin_attempt_setting"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="@id/wrong_icon"
+        app:layout_constraintStart_toStartOf="@id/wrong_icon"
+        app:layout_constraintTop_toTopOf="@id/wrong_icon" />
+
+    <TextView
+        android:id="@+id/wrong_pin_title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/select"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toEndOf="@id/wrong_pin_title_text"
+        app:layout_constraintStart_toStartOf="@id/wrong_pin_title_text"
+        app:layout_constraintTop_toBottomOf="@id/wrong_pin_title_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

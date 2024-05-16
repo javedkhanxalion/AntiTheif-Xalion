@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:layout_anchorGravity="center"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_5sdp"
+    >
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/rect_menu_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/flag_icon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tone_icon" />
+
+    <TextView
+        android:id="@+id/country_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/intruder"
+        android:textSize="@dimen/_11sdp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:paddingHorizontal="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="@id/top_view"
+        app:layout_constraintStart_toStartOf="@id/top_view"
+        app:layout_constraintTop_toBottomOf="@id/flag_icon" />
+
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/custom_radio_button"
+        android:button="@null"
+        app:layout_constraintTop_toBottomOf="@id/country_name"
+        app:layout_constraintBottom_toBottomOf="@id/top_view"
+        app:layout_constraintEnd_toEndOf="@id/top_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

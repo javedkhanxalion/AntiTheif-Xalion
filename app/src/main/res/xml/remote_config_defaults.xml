@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?><!-- START xml_defaults -->
+<defaultsMap>
+
+    <entry>
+        <key>val_inter_back_press</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_app_open_screen</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_main_menu_screen</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_inter_main_medium</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_inter_main_normal</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_native_loading_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_intro_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_language_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_sound_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_intruder_list_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_show_image_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_intruder_detection_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_password_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_Motion_Detection_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>id_frequency_counter</key>
+        <value>3</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_hand_free_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_clap_detection_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_Remove_Charger_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_Battery_Detection_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_Pocket_Detection_screen</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_exit_dialog_native</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_native_loading_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_intro_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_language_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_sound_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_intruder_list_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_show_image_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_intruder_detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_password_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_Motion_Detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_Whistle_Detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_hand_free_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_clap_detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_Remove_Charger_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_Battery_Detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_Pocket_Detection_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_ad_native_main_menu_screen_is_H</key>
+        <value>true</value>
+    </entry>
+    <entry>
+        <key>val_exit_dialog_native_is_H</key>
+    <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_main_menu_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_sound_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_intruder_list_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_show_image_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_intruder_detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_password_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_Motion_Detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_Whistle_Detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_hand_free_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_clap_detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_Remove_Charger_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_Battery_Detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_Pocket_Detection_screen_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>val_ad_instertital_exit_dialog_is_B</key>
+        <value>false</value>
+    </entry>
+
+    <entry>
+        <key>isFlowOne</key>
+        <value>true</value>
+    </entry>
+
+    <entry>
+        <key>val_inter_main_medium_Inapp_first</key>
+        <value>true</value>
+    </entry>
+
+</defaultsMap>

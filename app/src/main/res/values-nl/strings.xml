@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Antidief</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">Stel Alarm in om je telefoon te beveiligen tegen diefstal of om je telefoon te vinden</string>
+    <string name="phone_anti_theft">Telefoon Anti-diefstal</string>
+    <string name="continue_txt">Ga verder</string>
+    <string name="intruder">Indringer</string>
+    <string name="pocket">Zak</string>
+    <string name="password">Wachtwoord</string>
+    <string name="motion">Beweging</string>
+    <string name="wistle">Fluitje</string>
+    <string name="handfree">Handenvrij</string>
+    <string name="clap">Klap</string>
+    <string name="remove">Verwijderen</string>
+    <string name="battery">Batterij</string>
+    <string name="wifi_alarm">Wifi-alarm</string>
+
+    <string name="detection">Detectie</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="exit">Afsluiten</string>
+    <string name="exit_from_app">Wilt u afsluiten?</string>
+    <string name="enjo_app">Geniet van onze app</string>
+    <string name="rating_detail">Als je de app leuk vindt. Beoordeel ons dan</string>
+    <string name="rate_us">Beoordeel ons</string>
+    <string name="notification">Melding</string>
+    <string name="share_app">Deel app</string>
+    <string name="premium">Premium</string>
+    <string name="language">Taal</string>
+    <string name="more_app">Meer app (advertentie)</string>
+    <string name="privacy">Privacy</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">Druk om de knop te activeren en de telefoon direct op de telefoon te zetten</string>
+    <string name="select_sound">Selecteer Geluid</string>
+    <string name="inturder_selfie">Inturder-selfie</string>
+    <string name="wrong_password_alarm">Verkeerd wachtwoordalarm</string>
+    <string name="indurder_alert">Indurder-waarschuwing</string>
+    <string name="pin_attempt_setting">Instelling pinpoging</string>
+    <string name="stop_alarm">Alarm stoppen</string>
+    <string name="show_indruder">Indringer tonen</string>
+    <string name="pocket_detection">Zakdetectie</string>
+    <string name="set_app_language">Selecteer Talen</string>
+
+    <string name="next">Volgende</string>
+    <string name="skip">Overslaan</string>
+    <string name="_12_36_am">| 12: 36 uur</string>
+    <string name="today">Tot dag</string>
+    <string name="todo">To Do</string>
+    <string name="intruder_images">INTRUDERAFBEELDEN</string>
+    <string name="loading_advertisement">Advertenties laden</string>
+    <string name="share">Deel</string>
+    <string name="delete">Verwijderen</string>
+    <string name="cancel">Annuleren</string>
+    <string name="do_you_want_to_delete_images">Wil je afbeeldingen verwijderen?</string>
+    <string name="service_disable_dialog">Wilt u de service uitschakelen?</string>
+    <string name="image_deleted">Afbeelding verwijderd!</string>
+    <string name="wongPasswordAlertIsActive">Waarschuwing voor verkeerd wachtwoord is actief</string>
+    <string name="ok">Oké</string>
+    <string name="permissionDENIED">Toestemming GEWEIGERD</string>
+    <string name="permission_needed">Toestemming nodig</string>
+    <string name="camera_permission">Cameratoestemming is vereist voor foto\'s</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">Geen afbeelding gevonden</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Trilling</string>
+    <string name="active">Actief</string>
+    <string name="de_active">Verbinding verbreken</string>
+    <string name="service">Dienst</string>
+
+    <string name="english">Engels</string>
+    <string name="spanish">Spaans</string>
+    <string name="hindi">Hindi</string>
+    <string name="arabic">Arabisch</string>
+    <string name="french">Frans</string>
+    <string name="german">Duits</string>
+    <string name="japanese">Japans</string>
+    <string name="dutch">Nederlands</string>
+
+    <string name="tone_1">Sirene, alarm, waarschuwing</string>
+    <string name="tone_2">Persoonlijke hoge toon</string>
+    <string name="tone_3">Noodalarm</string>
+    <string name="tone_4">Waarschuwing gevaar</string>
+    <string name="tone_5">Kleine noodsituatie</string>
+    <string name="tone_6">complexe pieptoon</string>
+    <string name="tone_7">eenvoudige hoge toon</string>
+
+    <string name="no_internet">Geen internet</string>
+    <string name="check_ads">Advertenties controleren</string>
+    <string name="enable_disable">Inschakelen/uitschakelen</string>
+    <string name="detail">Detail</string>
+    <string name="select">Selecteer</string>
+
+    <string name="rate_title" >Beoordeel onze app!</string>
+    <string name="exit_title" >Weet je zeker dat je wilt afsluiten?</string>
+    <string name="notification_permission" >Meldingstoestemming is vereist voor toegang tot ALLE functies</string>
+
+    <string name="title_intruder" >Zet de schakelaar aan om de inbraakdetectiefunctie op je telefoon te activeren.</string>
+    <string name="title_pocket" >Zet de schakelaar aan om de functie Zakdetectie op je telefoon te activeren.</string>
+    <string name="title_password" >Zet de schakelaar aan om de functie Wachtwoorddetectie op uw telefoon te activeren.</string>
+    <string name="title_motion" >Zet de schakelaar aan om bewegingsdetectie op je telefoon te activeren.</string>
+    <string name="title_whistle" >Zet de schakelaar aan om de fluitdetectiefunctie op je telefoon te activeren.</string>
+    <string name="title_handfree" >Zet de schakelaar aan om de HandFree-detectiefunctie op uw telefoon te activeren.</string>
+    <string name="title_clap" >Zet de schakelaar aan voor het activeren van de klapdetectiefunctie op je telefoon.</string>
+    <string name="title_remove_charger" >Zet de schakelaar aan om de detectiefunctie voor het verwijderen van de oplader op je telefoon te activeren.</string>
+    <string name="title_battery" >Zet de schakelaar aan om de functie Batterij 100% detectie op je telefoon te activeren.</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">Onbeperkte toegang</string>
+    <string name="monthly_subscription">Maandelijks abonnement</string>
+    <string name="yearly_subscription">Jaarabonnement</string>
+    <string name="annual_free_trail">Jaarlijks (gratis parcours)</string>
+    <string name="no_commitment_cancel_anytime">Geen verplichting op elk moment annuleren</string>
+    <string name="_12_99_yearly">$12,99/jaarlijks</string>
+    <string name="_1_99_monthly">$1,99/maandelijks</string>
+    <string name="annual_free_trail_second">Na een gratis proefperiode van 3 dagen. Jaarabonnement voor 12,0$ nadat de gratis proefperiode is afgelopen.</string>
+
+</resources>

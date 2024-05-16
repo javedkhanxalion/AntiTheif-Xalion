@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="id_application_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>-->
+    <string name="id_application_id" translatable="false">ca-app-pub-5267896740455550~5089262884</string>
+    <string name="app_open_splash" translatable="false">ca-app-pub-5267896740455550/8812939371</string>
+    <string name="id_fullscreen_splash" translatable="false">ca-app-pub-5267896740455550/8084474775</string>
+    <string name="id_fullscreen_splash_2nd" translatable="false">ca-app-pub-5267896740455550/4897691198</string>
+    <string name="id_native_loading_screen" translatable="false">ca-app-pub-5267896740455550/4706119509</string>
+
+</resources>

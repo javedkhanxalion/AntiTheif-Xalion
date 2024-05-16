@@ -1,0 +1,123 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Anti Thief</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">Set Alarm to secure your phone from theft or find your phone</string>
+    <string name="phone_anti_theft">Phone Anti Theft</string>
+    <string name="continue_txt">Continue</string>
+    <string name="intruder">Intruder</string>
+    <string name="pocket">Pocket</string>
+    <string name="password">Password</string>
+    <string name="motion">Motion</string>
+    <string name="wistle">Whistle</string>
+    <string name="handfree">Handfree</string>
+    <string name="clap">Clap</string>
+    <string name="remove">Remove</string>
+    <string name="battery">Battery</string>
+    <string name="wifi_alarm">Wifi Alarm</string>
+
+    <string name="detection">Detection</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="exit">Exit</string>
+    <string name="exit_from_app">Do You Want To Exit ?</string>
+    <string name="enjo_app">Enjoy Our App</string>
+    <string name="rating_detail">If you enjoy over app.Please Rate us</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="notification">Notification</string>
+    <string name="share_app">Share App</string>
+    <string name="premium">Premium</string>
+    <string name="language">Language</string>
+    <string name="more_app">More App (Ad)</string>
+    <string name="privacy">Privacy</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">Press to Activate button and put phone on the directly</string>
+    <string name="select_sound">Select Sound</string>
+    <string name="inturder_selfie">Inturder Selfie</string>
+    <string name="wrong_password_alarm">Wrong Password Alarm</string>
+    <string name="indurder_alert">Indurder Alert</string>
+    <string name="pin_attempt_setting">Pin Attempt Setting</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="show_indruder">Show Intruder</string>
+    <string name="pocket_detection">Pocket Detection</string>
+    <string name="set_app_language">Select Languages</string>
+
+
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="_12_36_am">| 12 : 36 AM</string>
+    <string name="today">To Day</string>
+    <string name="todo">To Do</string>
+    <string name="intruder_images">INTRUDER IMAGES</string>
+    <string name="loading_advertisement">Loading Ads</string>
+    <string name="share">Share</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="do_you_want_to_delete_images">Do you want to delete images?</string>
+    <string name="service_disable_dialog">Do you want to Disable Service?</string>
+    <string name="image_deleted">Image Deleted!</string>
+    <string name="wongPasswordAlertIsActive">Wrong Password Alert is Active</string>
+    <string name="ok">Ok</string>
+    <string name="permissionDENIED">Permission DENIED</string>
+    <string name="permission_needed">Permission needed</string>
+    <string name="camera_permission">Camera permission is Needed for Photos</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">No Image Found</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Vibration</string>
+    <string name="active">Active</string>
+    <string name="de_active">Disconnect</string>
+    <string name="service">Service</string>
+
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="hindi">Hindi</string>
+    <string name="arabic">Arabic</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="japanese">Japanese</string>
+    <string name="dutch">Dutch</string>
+
+    <string name="tone_1">Siren, alarm, warning</string>
+    <string name="tone_2">Personal high pitched</string>
+    <string name="tone_3">Emergency alarm</string>
+    <string name="tone_4">Warning danger</string>
+    <string name="tone_5">Small emergency</string>    <string name="tone_6" >complex beeping tone</string>
+    <string name="tone_7">simple high pitched tone</string>
+
+    <string name="no_internet">No Internet</string>
+    <string name="check_ads">Check Ads</string>
+    <string name="enable_disable">Enable/Disable</string>
+    <string name="detail">Detail</string>
+    <string name="select">Select</string>
+
+    <string name="ad" translatable="false">Ad</string>
+    <string name="price" translatable="false">Price</string>
+    <string name="store" translatable="false">Store</string>
+    <string name="advertiser" translatable="false">Advertiser</string>
+
+    <string name="rate_title" >Rate our App!</string>
+    <string name="exit_title" >Are you sure you want to exit?</string>
+    <string name="notification_permission" >Notification permission is Needed for All Features Access</string>
+
+    <string name="title_intruder" >Turn on the switch for the activate Intruder detection feature on your phone.</string>
+    <string name="title_pocket" >Turn on the switch for the activate Pocket detection feature on your phone.</string>
+    <string name="title_password" >Turn on the switch for the activate Password detection feature on your phone.</string>
+    <string name="title_motion" >Turn on the switch for the activate Motion detection feature on your phone.</string>
+    <string name="title_whistle" >Turn on the switch for the activate Whistle detection feature on your phone.</string>
+    <string name="title_handfree" >Turn on the switch for the activate HandFree detection feature on your phone.</string>
+    <string name="title_clap" >Turn on the switch for the activate clap detection feature on your phone.</string>
+    <string name="title_remove_charger" >Turn on the switch for the activate Remove Charger detection feature on your phone.</string>
+    <string name="title_battery" >Turn on the switch for the activate Battery 100% detection feature on your phone.</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">Unlimited Access</string>
+    <string name="monthly_subscription">Monthly Subscription</string>
+    <string name="yearly_subscription">Yearly Subscription</string>
+    <string name="annual_free_trail">Annual (Free Trail)</string>
+    <string name="no_commitment_cancel_anytime">No Commitment Cancel Anytime</string>
+    <string name="_12_99_yearly">$12.99 / Yearly</string>
+    <string name="_1_99_monthly">$1.99 / Monthly</string>
+    <string name="annual_free_trail_second">After 3 days free trial.Yearly subscription for 12.0 after free trail ends.</string>
+    <string name="today_s_total">Today\'s Total</string>
+
+</resources>

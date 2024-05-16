@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_grid"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/detection_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintDimensionRatio="1:0.8"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/rect_menu_bg"
+        app:layout_constraintEnd_toStartOf="@id/sound_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/customSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@null"
+        android:thumb="@null"
+        app:track="@null"
+        android:button="@drawable/checkbox_internal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/top_image"
+        app:layout_constraintEnd_toEndOf="@id/detection_icon"
+        app:layout_constraintTop_toTopOf="@id/detection_icon"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/top_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="@id/detection_icon"
+        app:layout_constraintTop_toTopOf="@id/detection_icon"
+        />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/intruder"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@id/title_detection"
+        app:layout_constraintTop_toBottomOf="@id/top_image"
+        app:layout_constraintEnd_toEndOf="@id/detection_icon"
+        app:layout_constraintStart_toStartOf="@id/top_image" />
+
+    <TextView
+        android:id="@+id/title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/detection"
+        android:singleLine="true"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@id/detection_icon"
+        app:layout_constraintEnd_toEndOf="@id/detection_icon"
+        app:layout_constraintStart_toStartOf="@id/top_image"
+        app:layout_constraintTop_toBottomOf="@id/title_text" />
+
+
+    <View
+        android:id="@+id/sound_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintDimensionRatio="1:0.8"
+        android:background="@drawable/rect_menu_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/detection_icon"
+        app:layout_constraintBottom_toBottomOf="@id/detection_icon"
+        app:layout_constraintStart_toEndOf="@id/detection_icon"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/sound_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="@id/sound_icon"
+        app:layout_constraintTop_toTopOf="@id/sound_icon"
+        />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/sound_image_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/sound_icon"
+        app:layout_constraintTop_toTopOf="@id/sound_icon"
+        app:srcCompat="@drawable/next_arrow" />
+
+    <TextView
+        android:id="@+id/sound_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_sound"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@id/sound_title_detection"
+        app:layout_constraintTop_toBottomOf="@id/sound_image"
+        app:layout_constraintEnd_toEndOf="@id/sound_icon"
+        app:layout_constraintStart_toStartOf="@id/sound_image" />
+
+    <TextView
+        android:id="@+id/sound_title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/detail"
+        android:singleLine="true"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@id/sound_icon"
+        app:layout_constraintEnd_toEndOf="@id/sound_icon"
+        app:layout_constraintStart_toStartOf="@id/sound_image"
+        app:layout_constraintTop_toBottomOf="@id/sound_title_text" />
+
+
+    <FrameLayout
+        android:id="@+id/nativeExitAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="120dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/round_btn_ads"
+        app:layout_constraintTop_toBottomOf="@id/sound_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:letterSpacing="0.2"
+        android:text="@string/ad"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nativeExitAd"
+        app:layout_constraintEnd_toEndOf="@+id/nativeExitAd"
+        app:layout_constraintStart_toStartOf="@+id/nativeExitAd"
+        app:layout_constraintTop_toTopOf="@+id/nativeExitAd" />
+
+
+    <View
+        android:id="@+id/flash_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintDimensionRatio="1:0.8"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_menu_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sound_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nativeExitAd"
+        />
+
+    <Switch
+        android:id="@+id/flash_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:button="@drawable/checkbox_internal"
+        android:gravity="center"
+        android:thumb="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/flash_top_image"
+        app:layout_constraintEnd_toEndOf="@id/flash_icon"
+        app:layout_constraintTop_toTopOf="@id/flash_icon"
+        app:track="@null"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/flash_top_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_4sdp"
+        app:srcCompat="@drawable/flash_icon"
+        app:layout_constraintStart_toStartOf="@id/flash_icon"
+        app:layout_constraintTop_toTopOf="@id/flash_icon"
+        />
+
+    <TextView
+        android:id="@+id/flash_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/flash"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@id/flash_title_detection"
+        app:layout_constraintTop_toBottomOf="@id/flash_top_image"
+        app:layout_constraintEnd_toEndOf="@id/flash_icon"
+        app:layout_constraintStart_toStartOf="@id/flash_top_image" />
+
+    <TextView
+        android:id="@+id/flash_title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_disable"
+        android:singleLine="true"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@id/flash_icon"
+        app:layout_constraintEnd_toEndOf="@id/flash_icon"
+        app:layout_constraintStart_toStartOf="@id/flash_top_image"
+        app:layout_constraintTop_toBottomOf="@id/flash_title_text" />
+
+
+    <View
+        android:id="@+id/vibration_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintWidth_percent="0.45"
+        app:layout_constraintDimensionRatio="1:0.8"
+        android:background="@drawable/rect_menu_bg"
+        app:layout_constraintStart_toEndOf="@id/flash_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/flash_icon"
+        app:layout_constraintBottom_toBottomOf="@id/flash_icon"
+        />
+
+    <Switch
+        android:id="@+id/vibration_Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:button="@drawable/checkbox_internal"
+        android:gravity="center"
+        android:thumb="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/vibration_top_image"
+        app:layout_constraintEnd_toEndOf="@id/vibration_icon"
+        app:layout_constraintTop_toTopOf="@id/vibration_icon"
+        app:track="@null"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/vibration_top_image"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_4sdp"
+        app:srcCompat="@drawable/vibration_icon"
+        app:layout_constraintStart_toStartOf="@id/vibration_icon"
+        app:layout_constraintTop_toTopOf="@id/vibration_icon"
+        />
+
+    <TextView
+        android:id="@+id/vibration_title_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/vibration"
+        android:singleLine="true"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@id/vibration_title_detection"
+        app:layout_constraintTop_toBottomOf="@id/vibration_top_image"
+        app:layout_constraintEnd_toEndOf="@id/vibration_icon"
+        app:layout_constraintStart_toStartOf="@id/vibration_top_image" />
+
+    <TextView
+        android:id="@+id/vibration_title_detection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_disable"
+        android:singleLine="true"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintBottom_toBottomOf="@id/vibration_icon"
+        app:layout_constraintEnd_toEndOf="@id/vibration_icon"
+        app:layout_constraintStart_toStartOf="@id/vibration_top_image"
+        app:layout_constraintTop_toBottomOf="@id/vibration_title_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

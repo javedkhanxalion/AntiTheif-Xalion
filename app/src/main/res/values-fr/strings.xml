@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anti-voleur</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">Définissez une alarme pour sécuriser votre téléphone contre le vol ou retrouver votre téléphone</string>
+    <string name="phone_anti_theft">Antivol de téléphone</string>
+    <string name="continue_txt">Continuer</string>
+    <string name="intruder">Intrus</string>
+    <string name="pocket">Poche</string>
+    <string name="password">Mot de passe</string>
+    <string name="motion">Mouvement</string>
+    <string name="wistle">Sifflet</string>
+    <string name="handfree">Mains libres</string>
+    <string name="clap">Clap</string>
+    <string name="remove">Supprimer</string>
+    <string name="battery">Batterie</string>
+    <string name="wifi_alarm">Alarme Wifi</string>
+
+
+    <string name="detection">Détection</string>
+    <string name="yes">Oui</string>
+    <string name="no">Non</string>
+    <string name="exit">Quitter</string>
+    <string name="exit_from_app">Voulez-vous quitter ?</string>
+    <string name="enjo_app">Profitez de notre application</string>
+    <string name="rating_detail">Si vous appréciez l\'application, veuillez nous évaluer</string>
+    <string name="rate_us">Évaluez-nous</string>
+    <string name="notification">Notification</string>
+    <string name="share_app">Partager l\'application</string>
+    <string name="premium">Premium</string>
+    <string name="language">Langue</string>
+    <string name="more_app">Plus d\'application (annonce)</string>
+    <string name="privacy">Confidentialité</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">Appuyez pour activer le bouton et mettez le téléphone directement</string>
+    <string name="select_sound">Sélectionner le son</string>
+    <string name="inturder_selfie">Selfie Inturder</string>
+    <string name="wrong_password_alarm">Alarme de mot de passe incorrect</string>
+    <string name="indurder_alert">Alerte Indurder</string>
+    <string name="pin_attempt_setting">Paramètre de tentative de broche</string>
+    <string name="stop_alarm">Arrêter l\'alarme</string>
+    <string name="show_indruder">Afficher l\'intrus</string>
+    <string name="pocket_detection">Détection de poche</string>
+    <string name="set_app_language">Sélectionner les langues</string>
+
+    <string name="next">Suivant</string>
+    <string name="skip">Sauter</string>
+    <string name="_12_36_am">| 12 h 36</string>
+    <string name="today">Aujourd\'hui</string>
+    <string name="todo">À faire</string>
+    <string name="intruder_images">IMAGES D\'INTRUSION</string>
+    <string name="loading_advertisement">Chargement des annonces</string>
+    <string name="share">Partager</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="do_you_want_to_delete_images">Voulez-vous supprimer des images ?</string>
+    <string name="service_disable_dialog">Voulez-vous désactiver le service ?</string>
+    <string name="image_deleted">Image supprimée !</string>
+    <string name="wongPasswordAlertIsActive">L\'alerte de mot de passe incorrect est active</string>
+    <string name="ok">D\'accord</string>
+    <string name="permissionDENIED">Autorisation REFUSÉE</string>
+    <string name="permission_needed">Autorisation requise</string>
+    <string name="camera_permission">L\'autorisation de la caméra est requise pour les photos</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">Aucune image trouvée</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Vibrations</string>
+    <string name="active">Actif</string>
+    <string name="de_active">Déconnecter</string>
+    <string name="service">Service</string>
+
+    <string name="english">Anglais</string>
+    <string name="spanish">Espagnol</string>
+    <string name="hindi">Hindi</string>
+    <string name="arabic">Arabe</string>
+    <string name="french">Français</string>
+    <string name="german">Allemand</string>
+    <string name="japanese">Japonais</string>
+    <string name="dutch">Néerlandais</string>
+
+    <string name="tone_1">Sirène, alarme, avertissement</string>
+    <string name="tone_2">Aigu personnel</string>
+    <string name="tone_3">Alarme d\'urgence</string>
+    <string name="tone_4">Avertissement de danger</string>
+    <string name="tone_5">Petite urgence</string>
+    <string name="tone_6">bip complexe</string>
+    <string name="tone_7">ton aigu simple</string>
+
+    <string name="no_internet">Pas d\'Internet</string>
+    <string name="check_ads">Vérifier les annonces</string>
+    <string name="enable_disable">Activer/Désactiver</string>
+    <string name="detail">Détail</string>
+    <string name="select">Sélectionner</string>
+
+    <string name="rate_title" >Bewerten Sie unsere App!</string>
+    <string name="exit_title" >Sind Sie sicher, dass Sie den Vorgang beenden möchten?</string>
+    <string name="notification_permission" >Für den Zugriff auf ALLE Funktionen ist eine Benachrichtigungsberechtigung erforderlich</string>
+
+    <string name="title_intruder" >Activez le commutateur pour activer la fonction de détection d\'intrusion sur votre téléphone.</string>
+    <string name="title_pocket" >Activez le commutateur pour activer la fonction de détection de poche sur votre téléphone.</string>
+    <string name="title_password" >Activez le commutateur pour activer la fonction de détection de mot de passe sur votre téléphone.</string>
+    <string name="title_motion" >Activez le commutateur pour activer la fonction de détection de mouvement sur votre téléphone.</string>
+    <string name="title_whistle" >Activez le commutateur pour activer la fonction de détection de sifflet sur votre téléphone.</string>
+    <string name="title_handfree" >Activez le commutateur pour activer la fonction de détection HandFree sur votre téléphone.</string>
+    <string name="title_clap" >Activez le commutateur pour activer la fonction de détection des applaudissements sur votre téléphone.</string>
+    <string name="title_remove_charger" >Activez le commutateur pour activer la fonction de détection de suppression du chargeur sur votre téléphone.</string>
+    <string name="title_battery" >Activez l\'interrupteur pour activer la fonction de détection de batterie à 100 % sur votre téléphone.</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">Accès illimité</string>
+    <string name="monthly_subscription">Abonnement mensuel</string>
+    <string name="yearly_subscription">Abonnement annuel</string>
+    <string name="annual_free_trail">Annuel (Sentier gratuit)</string>
+    <string name="no_commitment_cancel_anytime">Aucun engagement, annulation à tout moment</string>
+    <string name="_12_99_yearly">12,99 $ / Annuel</string>
+    <string name="_1_99_monthly">1,99 $ / Mensuel</string>
+    <string name="annual_free_trail_second">Après 3 jours essai gratuit. Abonnement annuel pour 12,0 $ après la fin de essai gratuit.</string>
+
+</resources>

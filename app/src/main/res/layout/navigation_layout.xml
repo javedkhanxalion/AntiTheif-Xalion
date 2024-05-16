@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/splashBgColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--    Premium Button -->
+        <View
+            android:id="@+id/viewTop"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@color/navByBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintWidth_percent="0.85" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/rate_us"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/viewTop"
+            app:layout_constraintEnd_toStartOf="@+id/rate_us_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/viewTop"
+            app:layout_constraintTop_toTopOf="@id/viewTop"
+            app:srcCompat="@drawable/buy_icon" />
+
+        <TextView
+            android:id="@+id/buy_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:gravity="start"
+            android:text="@string/premium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/rate_us"
+            app:layout_constraintEnd_toEndOf="@id/viewTop"
+            app:layout_constraintStart_toEndOf="@+id/rate_us"
+            app:layout_constraintTop_toTopOf="@+id/rate_us" />
+
+        <!--    Notification Button -->
+        <View
+            android:id="@+id/notification_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@+id/viewTop"
+            app:layout_constraintStart_toStartOf="@id/viewTop"
+            app:layout_constraintTop_toBottomOf="@id/viewTop" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/notification_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            android:backgroundTint="#FF005C"
+            app:layout_constraintBottom_toBottomOf="@id/notification_view"
+            app:layout_constraintEnd_toStartOf="@+id/notification_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/notification_view"
+            app:layout_constraintTop_toTopOf="@id/notification_view"
+            android:background="@drawable/ic_notification" />
+
+        <TextView
+            android:id="@+id/notification_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/notification"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/notification_image"
+            app:layout_constraintEnd_toStartOf="@id/customSwitch"
+            app:layout_constraintStart_toEndOf="@+id/notification_image"
+            app:layout_constraintTop_toTopOf="@+id/notification_image" />
+
+        <Switch
+            android:id="@+id/customSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@null"
+            android:button="@drawable/checkbox_yura"
+            android:thumb="@null"
+            app:track="@null"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="@id/notification_text"
+            app:layout_constraintEnd_toEndOf="@id/notification_view"
+            app:layout_constraintStart_toEndOf="@id/notification_text"
+            app:layout_constraintTop_toTopOf="@id/notification_text"
+            tools:ignore="UseSwitchCompatOrMaterialXml"
+            />
+
+        <!--    Share Button -->
+        <View
+            android:id="@+id/share_app_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/notification_view"
+            app:layout_constraintStart_toStartOf="@id/notification_view"
+            app:layout_constraintTop_toBottomOf="@id/notification_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/share_app_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/share_app_view"
+            app:layout_constraintEnd_toStartOf="@+id/share_app_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toTopOf="@id/share_app_view"
+            app:srcCompat="@drawable/icon_share" />
+
+        <TextView
+            android:id="@+id/share_app_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="start"
+            android:text="@string/share_app"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/share_app_image"
+            app:layout_constraintEnd_toEndOf="@id/share_app_view"
+            app:layout_constraintStart_toEndOf="@+id/share_app_image"
+            app:layout_constraintTop_toTopOf="@+id/share_app_image" />
+
+        <!--    Rate Us Button -->
+        <View
+            android:id="@+id/rate_us_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/share_app_view"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toBottomOf="@id/share_app_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/rate_us_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/rate_us_view"
+            app:layout_constraintEnd_toStartOf="@+id/rate_us_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/rate_us_view"
+            app:layout_constraintTop_toTopOf="@id/rate_us_view"
+            app:srcCompat="@drawable/icon_rate_us" />
+
+        <TextView
+            android:id="@+id/rate_us_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="start"
+            android:text="@string/rate_us"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/rate_us_image"
+            app:layout_constraintEnd_toEndOf="@id/rate_us_view"
+            app:layout_constraintStart_toEndOf="@+id/rate_us_image"
+            app:layout_constraintTop_toTopOf="@+id/rate_us_image" />
+
+        <!--    Rate Us Button -->
+        <View
+            android:id="@+id/language_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/share_app_view"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toBottomOf="@id/rate_us_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/language_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/language_view"
+            app:layout_constraintEnd_toStartOf="@+id/language_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/language_view"
+            app:layout_constraintTop_toTopOf="@id/language_view"
+            app:srcCompat="@drawable/icon_language" />
+
+        <TextView
+            android:id="@+id/language_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="start"
+            android:text="@string/language"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/language_image"
+            app:layout_constraintEnd_toEndOf="@id/language_view"
+            app:layout_constraintStart_toEndOf="@+id/language_image"
+            app:layout_constraintTop_toTopOf="@+id/language_image" />
+
+        <!--    Rate Us Button -->
+        <View
+            android:id="@+id/more_app_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/share_app_view"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toBottomOf="@id/language_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/more_app_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/more_app_view"
+            app:layout_constraintEnd_toStartOf="@+id/more_app_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/more_app_view"
+            app:layout_constraintTop_toTopOf="@id/more_app_view"
+            app:srcCompat="@drawable/icon_more" />
+
+        <TextView
+            android:id="@+id/more_app_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="start"
+            android:text="@string/more_app"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/more_app_image"
+            app:layout_constraintEnd_toEndOf="@id/more_app_view"
+            app:layout_constraintStart_toEndOf="@+id/more_app_image"
+            app:layout_constraintTop_toTopOf="@+id/more_app_image" />
+
+        <!--    Privacy Button -->
+        <View
+            android:id="@+id/privacy_view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@+id/share_app_view"
+            app:layout_constraintStart_toStartOf="@id/share_app_view"
+            app:layout_constraintTop_toBottomOf="@id/more_app_view" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/privacy_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/privacy_view"
+            app:layout_constraintEnd_toStartOf="@+id/privacy_text"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/privacy_view"
+            app:layout_constraintTop_toTopOf="@id/privacy_view"
+            app:srcCompat="@drawable/icon_privac" />
+
+        <TextView
+            android:id="@+id/privacy_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:singleLine="true"
+            android:gravity="start"
+            android:text="@string/privacy"
+            android:textColor="@color/nveTextColor"
+            android:textSize="@dimen/_12sdp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/privacy_image"
+            app:layout_constraintEnd_toEndOf="@id/privacy_view"
+            app:layout_constraintStart_toEndOf="@+id/privacy_image"
+            app:layout_constraintTop_toTopOf="@+id/privacy_image" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

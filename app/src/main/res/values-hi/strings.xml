@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">विरोधी चोर</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">अपने फोन को चोरी से बचाने या अपना फोन ढूंढने के लिए अलार्म सेट करें</string>
+    <string name="phone_anti_theft">फोन विरोधी चोरी</string>
+    <string name="continue_txt">जारी रखें</string>
+    <string name="intruder">घुसपैठिया</string>
+    <string name="pocket">पॉकेट</string>
+    <string name="password">पासवर्ड</string>
+    <string name="motion">गति</string>
+    <string name="wistle">सीटी</string>
+    <string name="handfree">हैंडफ़्री</string>
+    <string name="clap">क्लैप</string>
+    <string name="remove">निकालें</string>
+    <string name="battery">बैटरी</string>
+    <string name="wifi_alarm">वाईफ़ाई अलार्म</string>
+
+    <string name="detection">डिटेक्शन</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+    <string name="exit">बाहर निकलें</string>
+    <string name="exit_from_app">क्या आप बाहर निकलना चाहते हैं?</string>
+    <string name="enjo_app">हमारे ऐप का आनंद लें</string>
+    <string name="rating_detail">यदि आप ऐप से अधिक आनंद लेते हैं तो कृपया हमें रेट करें</string>
+    <string name="rate_us">हमें रेट करें</string>
+    <string name="notification"> अधिसूचना</string>
+    <string name="share_app">ऐप साझा करें</string>
+    <string name="premium">प्रीमियम</string>
+    <string name="language">भाषा</string>
+    <string name="more_app">अधिक ऐप (विज्ञापन)</string>
+    <string name="privacy">गोपनीयता</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">सक्रिय करने के लिए बटन दबाएं और फोन को सीधे चालू करें</string>
+    <string name="select_sound">ध्वनि चुनें</string>
+    <string name="inturder_selfie">घुसपैठिया सेल्फी</string>
+    <string name="wrong_password_alarm">गलत पासवर्ड अलार्म</string>
+    <string name="indurder_alert"> Indurder चेतावनी</string>
+    <string name="pin_attempt_setting">पिन प्रयास सेटिंग</string>
+    <string name="stop_alarm">अलार्म बंद करें</string>
+    <string name="show_indruder">घुसपैठिये को दिखाएँ</string>
+    <string name="pocket_detection">पॉकेट डिटेक्शन</string>
+    <string name="set_app_language">भाषाएँ चुनें</string>
+
+    <string name="next">अगला</string>
+    <string name="skip">छोड़ें</string>
+    <string name="_12_36_am">| 12 : 36 पूर्वाह्न</string>
+    <string name="today">दिन तक</string>
+    <string name="todo">करें</string>
+    <string name="intruder_images">घुसपैठिए की छवियां</string>
+    <string name="loading_advertisement">विज्ञापन लोड हो रहा है</string>
+    <string name="share">साझा करें</string>
+    <string name="delete">हटाएं</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="do_you_want_to_delete_images">क्या आप छवियां हटाना चाहते हैं?</string>
+    <string name="service_disable_dialog">क्या आप सेवा अक्षम करना चाहते हैं?</string>
+    <string name="image_deleted">छवि हटाई गई!</string>
+    <string name="wongPasswordAlertIsActive">गलत पासवर्ड अलर्ट सक्रिय है</string>
+    <string name="ok">ठीक है</string>
+    <string name="permissionDENIED">अनुमति अस्वीकृत</string>
+    <string name="permission_needed">अनुमति आवश्यक है</string>
+    <string name="camera_permission">फ़ोटो के लिए कैमरे की अनुमति आवश्यक है</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">कोई छवि नहीं मिली</string>
+    <string name="flash">फ़्लैश</string>
+    <string name="vibration">कंपन</string>
+    <string name="active">सक्रिय</string>
+    <string name="de_active">डिस्कनेक्ट करें</string>
+    <string name="service">सेवा</string>
+
+    <string name="english">अंग्रेज़ी</string>
+    <string name="spanish">स्पेनिश</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="arabic">अरबी</string>
+    <string name="french">फ़्रेंच</string>
+    <string name="german">जर्मन</string>
+    <string name="japanese">जापानी</string>
+    <string name="dutch">डच</string>
+
+    <string name='tone_1'>सायरन, अलार्म, चेतावनी</string>
+    <string name='tone_2'>व्यक्तिगत उच्च स्वर</string>
+    <string name='tone_3'>आपातकालीन अलार्म</string>
+    <string name='tone_4'>चेतावनी ख़तरा</string>
+    <string name='tone_5'>छोटी आपातकालीन</string>
+    <string name='tone_6'>जटिल बीपिंग टोन</string>
+    <string name='tone_7'>सरल उच्च स्वर </string>
+
+    <string name='no_internet'>कोई इंटरनेट नहीं</string>
+    <string name='check_ads'>विज्ञापन जांचें</string>
+    <string name='enable_disable'>सक्षम/अक्षम करें</string>
+    <string name='detail'>विस्तार</string>
+    <string name='select'>चुनें</string>
+
+    <string name='rate_title' >हमारे ऐप को रेट करें!</string>
+    <string name='exit_title' >क्या आप वाकई बाहर निकलना चाहते हैं?</string>
+    <string name='notification_permission' >सभी सुविधाओं तक पहुंच के लिए अधिसूचना अनुमति की आवश्यकता है</string>
+
+    <string name='title_intruder' >अपने फ़ोन पर घुसपैठिए का पता लगाने की सुविधा सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name='title_pocket' >अपने फ़ोन पर सक्रिय पॉकेट डिटेक्शन सुविधा के लिए स्विच चालू करें।</string>
+    <string name='title_password' >अपने फ़ोन पर सक्रिय पासवर्ड पहचान सुविधा के लिए स्विच चालू करें।</string>
+    <string name='title_motion' >अपने फ़ोन पर मोशन डिटेक्शन सुविधा सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name='title_whistle' >अपने फ़ोन पर व्हिसल पहचान सुविधा सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name='title_handfree' >अपने फ़ोन पर HandFree पहचान सुविधा सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name='title_clap' >अपने फ़ोन पर सक्रिय क्लैप डिटेक्शन सुविधा के लिए स्विच चालू करें।</string>
+    <string name='title_remove_charger' >अपने फोन पर रिमूव चार्जर डिटेक्शन सुविधा को सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name='title_battery' >अपने फ़ोन पर बैटरी 100% पहचान सुविधा सक्रिय करने के लिए स्विच चालू करें।</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name='unlimited_access'>असीमित पहुंच</string>
+    <string name='monthly_subscription'>मासिक सदस्यता</string>
+    <string name='yearly_subscription'>वार्षिक सदस्यता</string>
+    <string name='annual_free_trail'>वार्षिक (निःशुल्क ट्रेल)</string>
+    <string name='no_commitment_cancel_anytime'>कोई प्रतिबद्धता नहीं, कभी भी रद्द करें</string>
+    <string name= "_12_99_yearly">$12.99 / वार्षिक</string>
+<string name = "_1_99_monthly">$1.99 / मासिक</string>
+<string name='annual_free_trail_second'>3 दिनों के निःशुल्क परीक्षण के बाद। निःशुल्क ट्रायल समाप्त होने के बाद 12.0 की वार्षिक सदस्यता।</string>
+
+</resources>

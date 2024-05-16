@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anti-Dieb</string>
+    <string name="set_alarm_to_secure_your_phone_from_theft_or_find_your_phone">Stellen Sie einen Alarm ein, um Ihr Telefon vor Diebstahl zu schützen oder Ihr Telefon zu finden</string>
+    <string name="phone_anti_theft">Telefon-Diebstahlschutz</string>
+    <string name="continue_txt">Weiter</string>
+    <string name="intruder">Eindringling</string>
+    <string name="pocket">Tasche</string>
+    <string name="password">Passwort</string>
+    <string name="motion">Bewegung</string>
+    <string name="wistle">Pfeifen</string>
+    <string name="handfree">Handfree</string>
+    <string name="clap">Klatschen</string>
+    <string name="remove">Entfernen</string>
+    <string name="battery">Batterie</string>
+    <string name="wifi_alarm">Wifi-Alarm</string>
+
+
+    <string name="detection">Erkennung</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nein</string>
+    <string name="exit">Beenden</string>
+    <string name="exit_from_app">Möchten Sie beenden?</string>
+    <string name="enjo_app">Viel Spaß mit unserer App</string>
+    <string name="rating_detail">Wenn Ihnen die App gefällt, bewerten Sie uns bitte</string>
+    <string name="rate_us">Bewerten Sie uns</string>
+    <string name="notification">Benachrichtigung</string>
+    <string name="share_app">App teilen</string>
+    <string name="premium">Premium</string>
+    <string name="language">Sprache</string>
+    <string name="more_app">Mehr App (Anzeige)</string>
+    <string name="privacy">Datenschutz</string>
+    <string name="press_to_activate_button_and_put_phone_on_the_directly">Drücken Sie die Taste zum Aktivieren und legen Sie das Telefon direkt auf das Gerät</string>
+    <string name="select_sound">Sound auswählen</string>
+    <string name="inturder_selfie">Eindringlings-Selfie</string>
+    <string name="wrong_password_alarm">Alarm wegen falschem Passwort</string>
+    <string name="indurder_alert">Indurder-Alarm</string>
+    <string name="pin_attempt_setting">Einstellung für Pin-Versuche</string>
+    <string name="stop_alarm">Alarm stoppen</string>
+    <string name="show_indruder">Eindringling anzeigen</string>
+    <string name="pocket_detection">Taschenerkennung</string>
+    <string name="set_app_language">Sprachen auswählen</string>
+
+    <string name="next">Weiter</string>
+    <string name="skip">Überspringen</string>
+    <string name="_12_36_am">| 12:36 Uhr</string>
+    <string name="today">Heute Tag</string>
+    <string name="todo">Aufgaben</string>
+    <string name="intruder_images">EINDRINGLINGSBILDER</string>
+    <string name="loading_advertisement">Anzeigen werden geladen</string>
+    <string name="share">Teilen</string>
+    <string name="delete">Löschen</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="do_you_want_to_delete_images">Möchten Sie Bilder löschen?</string>
+    <string name="service_disable_dialog">Möchten Sie den Dienst deaktivieren?</string>
+    <string name="image_deleted">Bild gelöscht!</string>
+    <string name="wongPasswordAlertIsActive">Warnung wegen falschem Passwort ist aktiv</string>
+    <string name="ok">Ok</string>
+    <string name="permissionDENIED">Berechtigung VERWEIGERT</string>
+    <string name="permission_needed">Berechtigung erforderlich</string>
+    <string name="camera_permission">Für Fotos ist eine Kameraberechtigung erforderlich</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="no_image_found">Kein Bild gefunden</string>
+    <string name="flash">Flash</string>
+    <string name="vibration">Vibration</string>
+    <string name="active">Aktiv</string>
+    <string name="de_active">Verbindung trennen</string>
+    <string name="service">Dienst</string>
+
+    <string name="english">Engels</string>
+    <string name="spanish">Spaans</string>
+    <string name="hindi">Hindi</string>
+    <string name="arabic">Arabisch</string>
+    <string name="french">Frans</string>
+    <string name="german">Duits</string>
+    <string name="japanese">Japans</string>
+    <string name="dutch">Nederlands</string>
+
+    <string name="tone_1">Sirene, Alarm, Warnung</string>
+    <string name="tone_2">Persönlicher hoher Ton</string>
+    <string name="tone_3">Notfallalarm</string>
+    <string name="tone_4">Warnung Gefahr</string>
+    <string name="tone_5">Kleiner Notfall</string>
+    <string name="tone_6">komplexer Piepton</string>
+    <string name="tone_7">einfacher hoher Ton</string>
+
+    <string name="no_internet">Kein Internet</string>
+    <string name="check_ads">Anzeigen prüfen</string>
+    <string name="enable_disable">Aktivieren/Deaktivieren</string>
+    <string name="detail">Detail</string>
+    <string name="select">Auswählen</string>
+
+    <string name="rate_title" >Bewerten Sie unsere App!</string>
+    <string name="exit_title" >Sind Sie sicher, dass Sie den Vorgang beenden möchten?</string>
+    <string name="notification_permission" >Für den Zugriff auf ALLE Funktionen ist eine Benachrichtigungsberechtigung erforderlich</string>
+
+    <string name="title_intruder" >Schalten Sie den Schalter ein, um die Eindringlingserkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_pocket" >Schalten Sie den Schalter ein, um die Taschenerkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_password" >Schalten Sie den Schalter ein, um die Funktion zur Passworterkennung auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_motion" >Schalten Sie den Schalter ein, um die Bewegungserkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_whistle" >Schalten Sie den Schalter ein, um die Pfeifenerkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_handfree" >Schalten Sie den Schalter ein, um die HandFree-Erkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_clap" >Schalten Sie den Schalter zur Aktivierung der Klatscherkennungsfunktion auf Ihrem Telefon ein.</string>
+    <string name="title_remove_charger" >Schalten Sie den Schalter ein, um die Erkennungsfunktion zum Entfernen des Ladegeräts auf Ihrem Telefon zu aktivieren.</string>
+    <string name="title_battery" >Schalten Sie den Schalter ein, um die Batterie-100-%-Erkennungsfunktion auf Ihrem Telefon zu aktivieren.</string>
+    <string name="loading_ad">Ad Loading ..</string>
+
+    <string name="unlimited_access">Unbegrenzter Zugriff</string>
+    <string name="monthly_subscription">Monatliches Abonnement</string>
+    <string name="yearly_subscription">Jahresabonnement</string>
+    <string name="annual_free_trail">Jährlich (kostenloser Trail)</string>
+    <string name="no_commitment_cancel_anytime">Keine Verpflichtung, jederzeit stornierbar</string>
+    <string name="_12_99_yearly">12,99 $/Jahr</string>
+    <string name="_1_99_monthly">1,99 $/Monat</string>
+    <string name="annual_free_trail_second">Nach 3 Tagen kostenloser Testversion. Jahresabonnement für 12,0 $ nach Ablauf der kostenlosen Testversion.</string>
+
+</resources>
