@@ -21,8 +21,8 @@ android {
         applicationId = "com.antitheftalarm.dont.touch.phone.finder"
         minSdk = 24
         targetSdk = 34
-        versionCode = 16
-        versionName = "2.6"
+        versionCode = 18
+        versionName = "2.8"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         setProperty("archivesBaseName", "AntiThief_v$versionName($versionCode)")
     }
