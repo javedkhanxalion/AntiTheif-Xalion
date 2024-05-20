@@ -100,6 +100,7 @@ dependencies {
     implementation (platform ("com.google.firebase:firebase-bom:30.3.1"))
     implementation("com.google.firebase:firebase-config-ktx:21.6.0")
     implementation("com.google.firebase:firebase-analytics-ktx:21.5.0")
+    implementation ("com.google.firebase:firebase-messaging:23.4.1")
     implementation ("com.github.hypersoftdev:inappbilling:3.0.0-alpha-02")
     implementation("com.tbuonomo:dotsindicator:5.0")
     //shimmer
