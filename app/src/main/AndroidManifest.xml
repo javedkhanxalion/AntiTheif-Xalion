@@ -129,14 +129,14 @@
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_icon"
-            android:resource="@drawable/notification_icon" />
+            android:resource="@drawable/ic_notification" />
 
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/colorAccent" />
+            android:resource="@color/button_color_1" />
 
         <service
-            android:name="MyFirebaseMessagingService"
+            android:name="com.example.antitheifproject.ads_manager.MyFirebaseMessagingService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
