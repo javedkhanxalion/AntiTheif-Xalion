@@ -118,6 +118,8 @@
     <string name="_12_99_yearly">$12.99 / Yearly</string>
     <string name="_1_99_monthly">$1.99 / Monthly</string>
     <string name="annual_free_trail_second">After 3 days free trial.Yearly subscription for 12.0 after free trail ends.</string>
+
+    <string name="month_free_trail_second">After 3 days free trial.Monthly subscription for 3.0 after free trail ends.</string>
     <string name="today_s_total">Today\'s Total</string>
 
 </resources>
