@@ -94,7 +94,7 @@ class FragmentInAppScreen :
                     if (productDetail.productId == "gold_product" && productDetail.planId == "gold-plan-monthly") {
                         // productDetail (monthly)
                         _binding?.monthlyText?.text = "${productDetail.price}"
-                        var originalString = getString(R.string.annual_free_trail_second)
+                        var originalString = getString(R.string.month_free_trail_second)
                         originalString =originalString.replace("3.0", productDetail.price)
                         _binding?.monthlyTextTDetail?.text = originalString
                         productDetail.freeTrialDays = 3
