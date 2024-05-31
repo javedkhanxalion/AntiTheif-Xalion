@@ -69,12 +69,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/_11sdp"
-            app:layout_constraintLeft_toRightOf="@id/monthlyCheck"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/monthlyCheck"
+            app:layout_constraintBottom_toTopOf="@id/monthlyTextTDetail"
+            app:layout_constraintTop_toTopOf="@id/monthlyCheck"
             android:layout_marginStart="@dimen/_10sdp"
             android:text="@string/monthly_subscription"
             android:textColor="@color/black"/>
+
+
+        <TextView
+            android:id="@+id/monthlyTextTDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:textColor="#585858"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintBottom_toBottomOf="@id/monthlyCheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/monthlyTextT"
+            app:layout_constraintTop_toBottomOf="@id/monthlyTextT" />
 
         <TextView
             android:id="@+id/monthlyText"

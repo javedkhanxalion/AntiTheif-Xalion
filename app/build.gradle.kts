@@ -96,7 +96,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-common:2.6.2")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
-    implementation("com.google.android.gms:play-services-ads:22.5.0")
+    implementation("com.google.android.gms:play-services-ads:23.1.0")
     implementation (platform ("com.google.firebase:firebase-bom:30.3.1"))
     implementation("com.google.firebase:firebase-config-ktx:21.6.0")
     implementation("com.google.firebase:firebase-analytics-ktx:21.5.0")
