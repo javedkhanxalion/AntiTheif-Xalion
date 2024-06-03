@@ -131,7 +131,7 @@
             android:id="@+id/yearlyTextT"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/annual_free_trail"
+            android:text="@string/yearly_subscription"
             android:textSize="@dimen/_11sdp"
             android:textColor="@color/black"
             android:layout_marginStart="@dimen/_10sdp"

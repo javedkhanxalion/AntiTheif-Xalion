@@ -171,9 +171,9 @@ class FragmentInAppScreen :
                     isBackPress = false,
                     layout = binding?.adsLay!!
                 ) {
+                    findNavController().navigate(R.id.myMainMenuFragment)
                 }
             }
-            findNavController().navigate(R.id.myMainMenuFragment)
         }else{
             findNavController().navigateUp()
         }

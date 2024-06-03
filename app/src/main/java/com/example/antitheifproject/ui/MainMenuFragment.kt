@@ -86,9 +86,9 @@ class MainMenuFragment :
                         isBackPress = false,
                         layout = binding?.mainLayout?.adsLay!!
                     ) {
+                        findNavController().navigate(R.id.FragmentExitScreen)
                     }
                 }
-                findNavController().navigate(R.id.FragmentExitScreen)
             }
         }
         _binding?.run {
@@ -150,14 +150,14 @@ class MainMenuFragment :
                         isBackPress = false,
                         layout = binding?.mainLayout?.adsLay!!
                     ) {
+                        firebaseAnalytics(
+                            "main_menu_fragment_language_open",
+                            "main_menu_fragment_language_open -->  Click"
+                        )
+                        findNavController().navigate(R.id.LanguageFragment, bundleOf(LANG_SCREEN to false))
+                        drawerLayout.closeDrawer(GravityCompat.START)
                     }
                 }
-                firebaseAnalytics(
-                    "main_menu_fragment_language_open",
-                    "main_menu_fragment_language_open -->  Click"
-                )
-                findNavController().navigate(R.id.LanguageFragment, bundleOf(LANG_SCREEN to false))
-                drawerLayout.closeDrawer(GravityCompat.START)
             }
             navView.navigationMain.setOnClickListener { }
             navView.customSwitch.setOnCheckedChangeListener { compoundButton, bool ->
@@ -280,9 +280,9 @@ class MainMenuFragment :
                         isBackPress = false,
                         layout = binding?.mainLayout?.adsLay!!
                     ) {
+                        findNavController().navigate(R.id.FragmentInturderDetectionDetail)
                     }
                 }
-                findNavController().navigate(R.id.FragmentInturderDetectionDetail)
             }
 
             2 -> {
@@ -298,12 +298,12 @@ class MainMenuFragment :
                         isBackPress = false,
                         layout = binding?.mainLayout?.adsLay!!
                     ) {
+                        findNavController().navigate(
+                            R.id.FragmentPasswordDetail,
+                            bundleOf(ANTI_TITLE to model)
+                        )
                     }
                 }
-                findNavController().navigate(
-                    R.id.FragmentPasswordDetail,
-                    bundleOf(ANTI_TITLE to model)
-                )
             }
 
             else -> {
@@ -322,12 +322,12 @@ class MainMenuFragment :
                             isBackPress = false,
                             layout = binding?.mainLayout?.adsLay!!
                         ) {
+                            findNavController().navigate(
+                                R.id.FragmentDetectionSameFunction,
+                                bundleOf(ANTI_TITLE to model)
+                            )
                         }
                     }
-                    findNavController().navigate(
-                        R.id.FragmentDetectionSameFunction,
-                        bundleOf(ANTI_TITLE to model)
-                    )
                 } else {
                     requestCameraPermissionAudio()
                 }

@@ -1,6 +1,7 @@
 package com.example.antitheifproject.ads_manager
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Handler
 import android.util.Log
 import android.view.View
@@ -15,7 +16,6 @@ import com.example.antitheifproject.utilities.firebaseAnalytics
 import com.example.antitheifproject.utilities.id_frequency_counter
 import com.example.antitheifproject.utilities.id_inter_counter
 import com.example.antitheifproject.utilities.inter_frequency_count
-//import com.example.antitheifproject.utilities.startTimer
 
 
 const val TAG = "TwoInterAds"
@@ -39,7 +39,9 @@ fun loadTwoInterAds(
     }
     ads.fullScreenAds().loadFullScreenAd(activity = activity,
         addConfig = remoteConfigMedium,
-        fullScreenAdId = adIdMedium,
+        fullScreenAdId = if (NativeAds.isDebug()) "ca-app-pub-3940256099942544/1033173712"
+        else
+            adIdMedium,
         adsListener = object : AdsListener {
             override fun adFailed() {
                 Log.d(TAG, "adFailed: medium inter failed")
@@ -118,11 +120,14 @@ fun showTwoInterAd(
     layout: ConstraintLayout,
     function: () -> Unit,
 ) {
-//    Log.d(TAG, "showTwoInterAd->adIdMedium: $adIdMedium")
-//    Log.d(TAG, "showTwoInterAd->adIdNormal: $adIdNormal")
-//    Log.d(TAG, "showTwoInterAd->adIdNormal: $counter $id_inter_counter")
-//    Log.d(TAG, "showTwoInterAd->adIdNormal: $remoteConfigMedium $remoteConfigNormal")
-    if (mInterstitialAd == null || (!remoteConfigMedium && !remoteConfigNormal)) {
+    Log.d(TAG, "showTwoInterAd->adIdMedium: $adIdMedium")
+    Log.d(TAG, "showTwoInterAd->adIdNormal: $adIdNormal")
+    Log.d(TAG, "showTwoInterAd->adIdNormal: $id_inter_counter")
+    if (mInterstitialAd == null) {
+        function.invoke()
+        return
+    }
+    if (!remoteConfigMedium && !remoteConfigNormal) {
         function.invoke()
         return
     }
@@ -130,7 +135,7 @@ fun showTwoInterAd(
         function.invoke()
         return
     }
-    if (inter_frequency_count >= id_frequency_counter) {
+    if (inter_frequency_count > id_frequency_counter) {
         function.invoke()
         return
     }
@@ -142,27 +147,17 @@ fun showTwoInterAd(
         return
     } else {
         counter = 0
-//        Log.d(TAG, "showTwoInterAd->adIdNormalCounter: $counter")
+        Log.d(TAG, "showTwoInterAd->adIdNormalCounter: $counter")
     }
-//    if (adsActiveCounter>0) {
-//        function.invoke()
-//        return
-//    }
     layout.visibility = View.VISIBLE
     Handler().postDelayed({
         ads.fullScreenAds().showAndLoad(activity, remoteConfigMedium, object : AdMobAdListener {
             override fun fullScreenAdShow() {
-                inter_frequency_count += 1
-//                adsActiveCounter += 1
-//                Log.d(TAG, "fullScreenAdShow: medium inter ad show")
-//                firebaseAnalytics("inter_medium_show_$tagClass", "inter_Show")
-//                Log.d("ads_count", "showTwoInterAd->adIdNormalCounter: $adsActiveCounter")
+                inter_frequency_count++
                 layout.visibility = View.GONE
-//                if(adsActive){
-//                    adsActive=false
-//                    startTimer()
-//                }
-
+                function.invoke()
+                Log.d(TAG, "fullScreenAdShow: medium inter ad show")
+                firebaseAnalytics("inter_medium_show_$tagClass", "inter_Show")
             }
 
             override fun fullScreenAdDismissed() {
@@ -177,8 +172,6 @@ fun showTwoInterAd(
                     adIdNormal = adIdNormal,
                     tagClass = tagClass
                 )
-                layout.visibility = View.GONE
-                function.invoke()
             }
 
             override fun fullScreenAdFailedToShow() {
@@ -192,12 +185,10 @@ fun showTwoInterAd(
                     adIdNormal
                 ) {
                     function.invoke()
+                    layout.visibility = View.GONE
                 }
-                layout.visibility = View.GONE
                 Log.d(TAG, "fullScreenAdFailedToShow: medium inter failed to show")
                 firebaseAnalytics("inter_medium_failed_show_$tagClass", "inter_Show")
-
-
             }
 
             override fun fullScreenAdNotAvailable() {
@@ -211,16 +202,124 @@ fun showTwoInterAd(
                     adIdNormal
                 ) {
                     function.invoke()
+                    layout.visibility = View.GONE
                 }
-                layout.visibility = View.GONE
+
                 Log.d(TAG, "fullScreenAdNotAvailable: medium inter not available")
                 firebaseAnalytics("inter_medium_not_Found_$tagClass", "inter_Show")
+
             }
 
-        }, adIdMedium, object : AdsListener {
-
+        }, "", object : AdsListener {
         })
-    }, 500)
+    }, 1500)
+}
+
+fun showTwoInterAdActivity(
+    ads: AdsManager,
+    activity: Activity,
+    remoteConfigMedium: Boolean,
+    remoteConfigNormal: Boolean,
+    adIdMedium: String,
+    adIdNormal: String,
+    tagClass: String,
+    isBackPress: Boolean,
+    layout: ConstraintLayout,
+    intent: Intent,
+) {
+    Log.d(TAG, "showTwoInterAd->adIdMedium: $adIdMedium")
+    Log.d(TAG, "showTwoInterAd->adIdNormal: $adIdNormal")
+    Log.d(TAG, "showTwoInterAd->adIdNormal: $id_inter_counter")
+    if (mInterstitialAd == null) {
+        activity.startActivity(intent)
+        return
+    }
+    if (!remoteConfigMedium && !remoteConfigNormal) {
+        activity.startActivity(intent)
+        return
+    }
+    if (!AdsManager.isNetworkAvailable(activity)) {
+        activity.startActivity(intent)
+        return
+    }
+    if (inter_frequency_count > id_frequency_counter) {
+        activity.startActivity(intent)
+        return
+    }
+
+    if (id_inter_counter != counter) {
+        counter++
+        Log.d(TAG, "showTwoInterAd->adIdNormalSkip: $counter")
+        activity.startActivity(intent)
+        return
+    } else {
+        counter = 0
+        Log.d(TAG, "showTwoInterAd->adIdNormalCounter: $counter")
+    }
+    layout.visibility = View.VISIBLE
+    Handler().postDelayed({
+        ads.fullScreenAds().showAndLoad(activity, remoteConfigMedium, object : AdMobAdListener {
+            override fun fullScreenAdShow() {
+                inter_frequency_count++
+                layout.visibility = View.GONE
+                Log.d(TAG, "fullScreenAdShow: medium inter ad show")
+                firebaseAnalytics("inter_medium_show_$tagClass", "inter_Show")
+            }
+
+            override fun fullScreenAdDismissed() {
+                Log.d(TAG, "fullScreenAdDismissed: medium inter dismiss")
+                firebaseAnalytics("inter_medium_dismiss_$tagClass", "inter_Show")
+                loadTwoInterAds(
+                    ads = ads,
+                    activity = activity,
+                    remoteConfigMedium = remoteConfigMedium,
+                    remoteConfigNormal = remoteConfigNormal,
+                    adIdMedium = adIdMedium,
+                    adIdNormal = adIdNormal,
+                    tagClass = tagClass
+                )
+                activity.startActivity(intent)
+            }
+
+            override fun fullScreenAdFailedToShow() {
+                showNormalInterAd(
+                    ads,
+                    activity,
+                    remoteConfigNormal,
+                    tagClass,
+                    remoteConfigMedium,
+                    adIdMedium,
+                    adIdNormal
+                ) {
+                    layout.visibility = View.GONE
+                    activity.startActivity(intent)
+                }
+                Log.d(TAG, "fullScreenAdFailedToShow: medium inter failed to show")
+                firebaseAnalytics("inter_medium_failed_show_$tagClass", "inter_Show")
+            }
+
+            override fun fullScreenAdNotAvailable() {
+                showNormalInterAd(
+                    ads,
+                    activity,
+                    remoteConfigNormal,
+                    tagClass,
+                    remoteConfigMedium,
+                    adIdMedium,
+                    adIdNormal
+                ) {
+                    activity.startActivity(intent)
+                    layout.visibility = View.GONE
+                }
+
+                Log.d(TAG, "fullScreenAdNotAvailable: medium inter not available")
+                firebaseAnalytics("inter_medium_not_Found_$tagClass", "inter_Show")
+
+            }
+
+        }, "", object : AdsListener {
+        })
+    }, 1500)
 }
 
 fun showTwoInterAdFirst(
@@ -239,74 +338,81 @@ fun showTwoInterAdFirst(
     Log.d(TAG, "showTwoInterAd->adIdNormal: $adIdNormal")
     Log.d(TAG, "showTwoInterAd->adIdNormal: $id_inter_counter")
 
-    if (!AdsManager.isNetworkAvailable(activity) && !remoteConfigMedium && !remoteConfigNormal) {
+    if (!AdsManager.isNetworkAvailable(activity) ) {
+        function.invoke()
+        return
+    }
+
+    if ( !remoteConfigMedium && !remoteConfigNormal) {
+        function.invoke()
         return
     }
 //    if (inter_frequency_count >= id_frequency_counter) {
 //        return
 //    }
 
-    ads.fullScreenAds().showAndLoad(activity, remoteConfigMedium, object : AdMobAdListener {
-        override fun fullScreenAdShow() {
-            inter_frequency_count += 1
-//            adsActiveCounter += 1
-            Log.d(TAG, "fullScreenAdShow: medium inter ad show")
-            firebaseAnalytics("inter_medium_show_$tagClass", "inter_Show")
-        }
-
-        override fun fullScreenAdDismissed() {
-            Log.d(TAG, "fullScreenAdDismissed: medium inter dismiss")
-            firebaseAnalytics("inter_medium_dismiss_$tagClass", "inter_Show")
-            loadTwoInterAds(
-                ads = ads,
-                activity = activity,
-                remoteConfigMedium = remoteConfigMedium,
-                remoteConfigNormal = remoteConfigNormal,
-                adIdMedium = adIdMedium,
-                adIdNormal = adIdNormal,
-                tagClass = tagClass
-            )
-            function.invoke()
-        }
-
-        override fun fullScreenAdFailedToShow() {
-            showNormalInterAd(
-                ads,
-                activity,
-                remoteConfigNormal,
-                tagClass,
-                remoteConfigMedium,
-                adIdMedium,
-                adIdNormal
-            ) {
-
+    layout.visibility = View.VISIBLE
+    Handler().postDelayed({
+        ads.fullScreenAds().showAndLoad(activity, remoteConfigMedium, object : AdMobAdListener {
+            override fun fullScreenAdShow() {
+                inter_frequency_count++
                 function.invoke()
+                layout.visibility = View.GONE
+                Log.d(TAG, "fullScreenAdShow: medium inter ad show")
+                firebaseAnalytics("inter_medium_show_$tagClass", "inter_Show")
             }
-            Log.d(TAG, "fullScreenAdFailedToShow: medium inter failed to show")
-            firebaseAnalytics("inter_medium_failed_show_$tagClass", "inter_Show")
 
-
-        }
-
-        override fun fullScreenAdNotAvailable() {
-            showNormalInterAd(
-                ads,
-                activity,
-                remoteConfigNormal,
-                tagClass,
-                remoteConfigMedium,
-                adIdMedium,
-                adIdNormal
-            ) {
-                function.invoke()
+            override fun fullScreenAdDismissed() {
+                Log.d(TAG, "fullScreenAdDismissed: medium inter dismiss")
+                firebaseAnalytics("inter_medium_dismiss_$tagClass", "inter_Show")
+                loadTwoInterAds(
+                    ads = ads,
+                    activity = activity,
+                    remoteConfigMedium = remoteConfigMedium,
+                    remoteConfigNormal = remoteConfigNormal,
+                    adIdMedium = adIdMedium,
+                    adIdNormal = adIdNormal,
+                    tagClass = tagClass
+                )
             }
-            Log.d(TAG, "fullScreenAdNotAvailable: medium inter not available")
-            firebaseAnalytics("inter_medium_not_Found_$tagClass", "inter_Show")
-        }
 
-    }, adIdMedium, object : AdsListener {
+            override fun fullScreenAdFailedToShow() {
+                showNormalInterAd(
+                    ads,
+                    activity,
+                    remoteConfigNormal,
+                    tagClass,
+                    remoteConfigMedium,
+                    adIdMedium,
+                    adIdNormal
+                ) {
+                    function.invoke()
+                }
+                Log.d(TAG, "fullScreenAdFailedToShow: medium inter failed to show")
+                firebaseAnalytics("inter_medium_failed_show_$tagClass", "inter_Show")
 
-    })
+
+            }
+
+            override fun fullScreenAdNotAvailable() {
+                showNormalInterAd(
+                    ads,
+                    activity,
+                    remoteConfigNormal,
+                    tagClass,
+                    remoteConfigMedium,
+                    adIdMedium,
+                    adIdNormal
+                ) {
+                    function.invoke()
+                }
+                Log.d(TAG, "fullScreenAdNotAvailable: medium inter not available")
+                firebaseAnalytics("inter_medium_not_Found_$tagClass", "inter_Show")
+            }
+
+        }, adIdMedium, object : AdsListener {
+        })
+    }, 1000)
 }
 
 private fun showNormalInterAd(
@@ -322,20 +428,15 @@ private fun showNormalInterAd(
     Log.d(TAG, "showNormalInterAd->adIdMedium: $adIdMedium")
     Log.d(TAG, "showNormalInterAd->adIdNormal: $adIdNormal")
     if (!AdsManager.isNetworkAvailable(activity)) {
-        function.invoke()
         return
     }
     ads.fullScreenAdsTwo().showAndLoadTwo(activity, remoteConfigNormal, object : AdMobAdListener {
         override fun fullScreenAdShow() {
-            inter_frequency_count += 1
-//            adsActiveCounter += 1
+            inter_frequency_count++
+            function.invoke()
             Log.d(TAG, "fullScreenAdShow: normal inter ad show")
             firebaseAnalytics("inter_normal_show_$tagClass", "inter_Show")
-//            Log.d("ads_count", "showTwoInterAd->adIdNormalCounter: $adsActiveCounter")
-//            if(adsActive){
-//                adsActive=false
-//                startTimer()
-//            }
+
         }
 
         override fun fullScreenAdDismissed() {
@@ -350,7 +451,6 @@ private fun showNormalInterAd(
                 adIdNormal = adIdNormal,
                 tagClass = tagClass
             )
-            function.invoke()
         }
 
         override fun fullScreenAdFailedToShow() {
@@ -370,4 +470,5 @@ private fun showNormalInterAd(
 
     })
 }
+
 

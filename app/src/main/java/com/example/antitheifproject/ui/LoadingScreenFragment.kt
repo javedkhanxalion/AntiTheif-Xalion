@@ -100,7 +100,7 @@ class LoadingScreenFragment :
                 activity = activity ?: return@let,
                 remoteConfigMedium = true,
                 remoteConfigNormal = true,
-                adIdMedium = id_inter_main_medium,
+                adIdMedium = id_inter_main_normal,
                 adIdNormal = id_inter_main_normal,
                 tagClass = "home_pre_cache"
             )

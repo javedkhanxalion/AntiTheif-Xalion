@@ -73,12 +73,12 @@ class FragmentDetectionSameFunction :
                         isBackPress = true,
                         layout = binding?.adsLay!!
                     ) {
+                        findNavController().navigate(
+                            R.id.FragmentSoundSelection,
+                            bundleOf(ANTI_TITLE to model)
+                        )
                     }
                 }
-                findNavController().navigate(
-                    R.id.FragmentSoundSelection,
-                    bundleOf(ANTI_TITLE to model)
-                )
             }
 
             linearlayout.soundIcon.clickWithThrottle {
@@ -94,12 +94,12 @@ class FragmentDetectionSameFunction :
                         isBackPress = true,
                         layout = binding?.adsLay!!
                     ) {
+                        findNavController().navigate(
+                            R.id.FragmentSoundSelection,
+                            bundleOf(ANTI_TITLE to model)
+                        )
                     }
                 }
-                findNavController().navigate(
-                    R.id.FragmentSoundSelection,
-                    bundleOf(ANTI_TITLE to model)
-                )
             }
 
             topLay.setLayoutBtn.clickWithThrottle {
